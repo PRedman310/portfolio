@@ -109,6 +109,7 @@ nav {
 .fa-grip-lines {
     cursor: pointer;
     font-size: 24px;
+    display: none;
     visibility: hidden;
 }
 
@@ -796,10 +797,12 @@ position: relative;
 @media (max-width: 580px) {
 
     .fa-grip-lines {
+    display: block;
     visibility: visible;
     }       
     .nav__link--list {
         visibility: hidden;
+        display: none;
     }
     .title {
         font-size: 56px;
