@@ -689,6 +689,16 @@ position: relative;
     visibility: hidden;
 }
 
+.hamburger-container-open .hamburger-container {
+    z-index: 10;
+    visibility: visible;
+}
+
+.hamburger-container-close .hamburger-container {
+    z-index: -50;
+    visibility: hidden;
+}
+
 /*The above class connects to javascript; move there to see its purpose*/
 
 /*Footer*/
@@ -728,13 +738,69 @@ position: relative;
     }
 }
 
+.close__hamburger {
+    cursor: pointer;
+    position: absolute;
+    position: absolute;
+    bottom: 12%;
+    font-size: 28px;
+    z-index: 100;
+    background: none;
+    border: none;
+}
+
+.close__hamburger:hover {
+    transform: scale(1.4);
+    transition: all 200ms ease;
+}
+
+.close__hamburger:active {
+    transform: scale(.8);
+}
+
+.hamburger-container {
+    background-color: #333;
+    padding: 16px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 60vh;
+    box-sizing: border-box;
+    z-index: 5;
+}
+
+.hamburger-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+}
+
+.hamburger-option {
+    display: block;
+    width: 100%;
+    padding: 24px 0;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
 /*Media Queries*/
 
 @media (max-width: 480px) {
-
 }
 
 @media (max-width: 580px) {
+
+    .fa-grip-lines {
+    visibility: visible;
+    }       
+    .nav__link--list {
+        visibility: hidden;
+    }
     .title {
         font-size: 56px;
     }

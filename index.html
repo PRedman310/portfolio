@@ -43,10 +43,28 @@
                 <li class="nav__link click">
                     <i class="fa-solid fa-circle-half-stroke" onclick="toggleContrast()"></i>
                 </li>
-            </ul>   
+            </ul>
+            
+            <i class="fa-solid fa-grip-lines click" onclick="toggleHamburger()"></i>
+
+                <div class="hamburger-container">
+                    <div class="hamburger-links">
+                        <a class="hamburger-option click" href="#">Home</a>
+                        <a class="hamburger-option click" href="#projects">Projects</a>
+                        <a class="hamburger-option click" onclick="toggleModal()">Contact</a>
+                        <a class="hamburger-option click" onclick="toggleContrast()">
+                             <i class="fa-solid fa-circle-half-stroke"></i>
+                        </a>
+                        <a class="hamburger-option close-hamburger" onclick="toggleHamburger()">
+                             <i class="fa-solid fa-x click"></i>
+                        </a> 
+                    </div>
+                </div>
+
+
         </nav>
         <div class="header">
-            <button class="message__me" onclick="toggleModal()">
+            <button class="message__me" onclick="toggleModal()">    
                 <i class="fa-regular fa-message"></i>
             </button>
             <header class="header-content">

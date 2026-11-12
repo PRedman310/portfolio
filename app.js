@@ -3,6 +3,7 @@
 //Public Key: pKMeIcAk7JK7c9LZn
 let isModalOpen = false;
 let contrastToggle = false;
+let isHamburgerOpen = false;
 
 //anonymous arrow function with event listeners inside
 
@@ -47,6 +48,17 @@ function toggleModal() {
     }
     isModalOpen = true;
     document.body.classList += " modal__open"
+    
+
+}
+
+function toggleHamburger() {
+    if (isHamburgerOpen) {
+        isHamburgerOpen = false;
+        return document.body.classList.remove("hamburger-container-close")
+    }
+    isHamburgerOpen = true;
+    document.body.classList += " hamburger-container-close"
     
 
 }
