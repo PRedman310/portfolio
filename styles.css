@@ -693,11 +693,10 @@ position: relative;
 .hamburger-container-open .hamburger-container {
     z-index: 10;
     visibility: visible;
-}
-
-.hamburger-container-close .hamburger-container {
-    z-index: -50;
-    visibility: hidden;
+    transform: translateY(0);
+    transition:
+        transform 0.3s ease-in-out,
+        visibility 0s;
 }
 
 /*The above class connects to javascript; move there to see its purpose*/
@@ -768,7 +767,12 @@ position: relative;
     left: 0;
     height: 60vh;
     box-sizing: border-box;
-    z-index: 5;
+    z-index: -50;
+    visibility: hidden;
+    transform: translateY(-100%);
+    transition:
+        transform 0.3s ease-in-out,
+        visibility 0s linear 0.3s;
 }
 
 .hamburger-links {

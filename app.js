@@ -55,10 +55,10 @@ function toggleModal() {
 function toggleHamburger() {
     if (isHamburgerOpen) {
         isHamburgerOpen = false;
-        return document.body.classList.remove("hamburger-container-close")
+        return document.body.classList.remove("hamburger-container-open")
     }
     isHamburgerOpen = true;
-    document.body.classList += " hamburger-container-close"
+    document.body.classList += " hamburger-container-open"
     
 
 }
