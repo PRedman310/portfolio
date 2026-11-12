@@ -7,6 +7,10 @@
     scroll-behavior: smooth;
 }
 
+html {
+    background-color: #1C2541;
+}
+
 li {
     list-style-type: none;
 }
@@ -125,8 +129,7 @@ nav {
     border: none;
     background-color: #64DFDF;
     position: absolute;
-    bottom: -188px;
-    right: -88px;
+    bottom: -150px;
     cursor: pointer;
     z-index: 3;
 }
@@ -311,7 +314,6 @@ nav {
 }
 
 /*Projects*/
-
 .section__title {
 display: flex;
 flex-direction: row;
@@ -319,6 +321,10 @@ align-items: center;
 justify-content: center;
 margin-bottom: 60px;
 position: relative;
+}
+
+.project__title {
+    padding-top: 48px;
 }
 
 
@@ -799,10 +805,20 @@ position: relative;
 }
 
 @media (max-width: 580px) {
-
+    .footer__social--link {
+        padding: 0 12px;
+    }
+    .message__me {
+        top: 550px;
+        left: -82px;
+    }
+    .header {
+        position: relative;
+        top: 125px;
+    }
     .fa-grip-lines {
-    display: block;
-    visibility: visible;
+        display: block;
+        visibility: visible;
     }       
     .nav__link--list {
         visibility: hidden;
@@ -846,6 +862,31 @@ position: relative;
     }
     .modal__half--about {
         overflow-y: auto;
+    }
+    .title {
+        font-size: 56px;
+    }
+    .modal__subtitle--contact, .modal__subtitle--about {
+        font-size: 18px;
+    }
+    .modal__title {
+        font-size: 22px;
+    }
+    .modal__half--about {
+        overflow-y: auto;
+    }
+    .language {
+        max-width: 100%;
+        max-height: 100%;
+    }
+    .proj__desc--title {
+        font-size: 20px;
+    }
+    .proj__desc--subtitle {
+        font-size: 16px;
+    }
+    .proj__para {
+        display: none;
     }
 }
 
@@ -916,8 +957,5 @@ position: relative;
 }
 
 @media (max-width: 1510px) {
-    .message__me {
-        top: 498px;
-        left: 250px;
-    }
+    
 }
